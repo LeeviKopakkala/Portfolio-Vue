@@ -7,7 +7,7 @@
                 </div>
                 <div id="browser-content">
                     <pre class="prettyprint">
-<code class="language-js">// Welcome
+<code class="language-js">// General
 [
     {
         "_name": "Leevi Kopakkala",
@@ -40,14 +40,14 @@ export default {
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     width:90%;
     margin: 0 auto;
+    margin-top: -5%;
+    margin-bottom: 5%;
     #browser-nav {
         top:0;
         width:100%;
         padding-left:2%;
         text-align:left;
-        vertical-align: middle;
         position:relative;
-        display: inline-block;
         background:#fff;
         height:10%;
         #browser-button {
@@ -55,7 +55,7 @@ export default {
             left:0;
             height:10px;
             width:10px;
-            vertical-align: middle;
+            vertical-align: middle !important;
             margin-left: 3px;
             margin-right: 3px;
             background-color:aqua;

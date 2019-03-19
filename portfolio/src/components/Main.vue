@@ -1,21 +1,28 @@
 <template>
-  <div class="container">
-    <div class="row row-center">
-        <Browser></Browser>
+  <div class="view">
+    <div class="container-fluid">
+      <Welcome></Welcome>
+    </div>
+    <div class="container">
+      <div class="row row-center">      
+          <Browser></Browser>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import Browser from '../components/Browser.vue'
+import Welcome from '../components/Welcome.vue'
 
 export default {
-  name: 'Header',
+  name: 'Main',
   props: {
     mainHeader: String
   },
   components: {
-    Browser
+    Browser,
+    Welcome
   }
 }
 </script>
@@ -27,6 +34,12 @@ export default {
 
 .container {
     font-family: $primary-font;
+}
+.container-fluid {
+  padding-right:0;
+    padding-left:0;
+    margin-right:auto;
+    margin-left:auto
 }
 .header-text {
     height:200px;
