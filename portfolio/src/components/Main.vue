@@ -34,6 +34,8 @@ export default {
 
 .container {
     font-family: $primary-font;
+    z-index:100;
+    background:#fff;
 }
 .container-fluid {
   padding-right:0;

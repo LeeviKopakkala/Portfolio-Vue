@@ -6,7 +6,9 @@
               <h1 id="header-welcome">{ Welcome }</h1>
               <p id="header-paragraph">Development through creativity</p>
           </div>  
-          <div class="col-sm-7 auto-center col-browser">
+          <div class="col-sm-4 auto-center">
+              <WelcomeSVG id="welcome-svg"></WelcomeSVG>
+              <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="leevi-kopakkala"><a class="LI-simple-link" href='https://fi.linkedin.com/in/leevi-kopakkala?trk=profile-badge'>Leevi Kopakkala</a></div>
           </div>
               
       </div>
@@ -15,13 +17,15 @@
 
 <script>
 import Browser from '../components/Browser.vue'
+import WelcomeSVG from '../assets/welcome.svg'
 export default {
   name: 'Welcome',
   props: {
     mainText: String
   },
   components: {
-    Browser
+    Browser,
+    WelcomeSVG
   }
 }
 </script>
@@ -35,22 +39,29 @@ export default {
     background-color: $primary-dark;
     height:100vh;
     padding:10%;
+    overflow: hidden;
 }
 
 .row-welcome {
-    width:90vw !important;   
+    width:90vw !important;  
+    z-index:1; 
 }
 
 #header-welcome {
     color: white;
     font-weight: bold;
     font-size: 8em;
+    white-space: nowrap;
 }
 
 @media only screen and (max-width: 600px) {
   #header-welcome {
       font-size:4em;
   }
+}
+
+.svg-welcome {
+    height:100%;
 }
 
 #header-small {
@@ -68,6 +79,29 @@ export default {
     margin-bottom: auto;
     width:90%;
 }
+
+.LI-profile-badge {
+    z-index:100 !important;
+    position:relative;
+    background:white;
+    font-family: $primary-font !important;
+}
+
+#welcome-svg {
+    height:80vh;
+    position:absolute;
+    bottom:0;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+    #welcome-svg{
+        height:70vh;
+    }
+}
+
+
+
 
 
 </style>
