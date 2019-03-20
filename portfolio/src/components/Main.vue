@@ -5,8 +5,9 @@
     </div>
     <div class="container tech-container">
       <div class="row row-center">
+        <BlueprintSVG class="blueprint-svg"></BlueprintSVG>
         <div class="col-lg-6 tech-col">
-          <h1 class="large-header">Frameworks</h1>
+          <h1>Frameworks</h1>
           <TechPill color="green" technology="Vue.JS"></TechPill>
           <TechPill color="red" technology="Angular"></TechPill>
           <TechPill color="blue" technology="Nativescript"></TechPill>
@@ -62,6 +63,7 @@ import Browser from '../components/Browser.vue'
 import Welcome from '../components/Welcome.vue'
 import PhoneSVG from '../assets/phone.svg'
 import LaunchSVG from '../assets/launch.svg'
+import BlueprintSVG from '../assets/blueprint.svg'
 import Topics from '../components/Topics.vue'
 import TechPill from '../components/TechPill.vue'
 
@@ -76,7 +78,8 @@ export default {
     PhoneSVG,
     Topics,
     LaunchSVG,
-    TechPill
+    TechPill,
+    BlueprintSVG
   },
   // define methods under the `methods` object
   methods: {
@@ -108,12 +111,21 @@ export default {
 
 .tech-container {
   margin-top: 1%;
+  color:white;
   margin-bottom: 10%; 
+  background: rgb(96, 41, 247);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.288), 0 2px 4px rgba(0, 0, 0, 0.308);
 }
 
 .tech-col {
   margin-top:2%;
   margin-bottom: 2%;
+}
+
+.blueprint-svg {
+  position:absolute;
+  width: 100%;
+  left:0;
 }
 
 .container-fluid {
