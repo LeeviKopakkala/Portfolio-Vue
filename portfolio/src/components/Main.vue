@@ -20,9 +20,12 @@
         </div> 
         <div class="col-md-4">
           <LaunchSVG class="launch-svg"></LaunchSVG>
-        </div>        
-      </div>          
+        </div>         
+      </div>            
     </div>
+    <div id="contact"> </div>  
+    <div style="padding:40px"></div>
+    
     <div class="container">
       <div class="row row-center" v-scroll-reveal.reset>    
           <Browser></Browser>    
@@ -86,7 +89,7 @@ export default {
   // define methods under the `methods` object
   methods: {
     scrollTo: function (event) {
-      location.href = "#browser-device";
+      location.href = "#contact";
     }
   }
 }
