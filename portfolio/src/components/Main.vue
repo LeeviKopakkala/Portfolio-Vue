@@ -3,6 +3,24 @@
     <div class="container-fluid">
       <Welcome v-scroll-reveal></Welcome>
     </div>
+    <div class="container tech-container">
+      <div class="row row-center">
+        <div class="col-lg-6 tech-col">
+          <h1 class="large-header">Frameworks</h1>
+          <TechPill color="green" technology="Vue.JS"></TechPill>
+          <TechPill color="red" technology="Angular"></TechPill>
+          <TechPill color="blue" technology="Nativescript"></TechPill>
+          <TechPill color="blue" technology="Laravel"></TechPill>
+        </div>
+        <div class="col-lg-6 tech-col">
+          <h1>Languages</h1>
+          <TechPill color="blue" technology="Typescript"></TechPill>
+          <TechPill color="blue" technology="PHP"></TechPill>
+          <TechPill color="yellow" technology="Javascript"></TechPill>
+          <TechPill color="yellow" technology="C#"></TechPill>
+        </div>
+      </div>
+    </div>
     <div class="container-fluid container-phone">
       <div class="row row-center">
         <div class="col-md-3">
@@ -45,6 +63,7 @@ import Welcome from '../components/Welcome.vue'
 import PhoneSVG from '../assets/phone.svg'
 import LaunchSVG from '../assets/launch.svg'
 import Topics from '../components/Topics.vue'
+import TechPill from '../components/TechPill.vue'
 
 export default {
   name: 'Main',
@@ -56,7 +75,8 @@ export default {
     Welcome,
     PhoneSVG,
     Topics,
-    LaunchSVG
+    LaunchSVG,
+    TechPill
   },
   // define methods under the `methods` object
   methods: {
@@ -84,6 +104,16 @@ export default {
   padding-left:0;
   margin-right:auto;
   margin-left:auto
+}
+
+.tech-container {
+  margin-top: 1%;
+  margin-bottom: 10%; 
+}
+
+.tech-col {
+  margin-top:2%;
+  margin-bottom: 2%;
 }
 
 .container-fluid {
