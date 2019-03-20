@@ -23,6 +23,7 @@
 <script>
 import Browser from '../components/Browser.vue'
 import WelcomeSVG from '../assets/welcome.svg'
+
 import SocialIcon from '../components/SocialIcon.vue'
 
 
@@ -35,7 +36,6 @@ export default {
     Browser,
     WelcomeSVG,
     SocialIcon,
-    
   }
 }
 </script>

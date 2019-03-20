@@ -1,13 +1,13 @@
 <template>
             <div id="browser-device">
                 <div id="browser-nav">
-                    <div class="browser-button el-dark" ></div>
+                    <div class="browser-button el-red" ></div>
                     <div class="browser-button"></div>
-                    <div class="browser-button"></div>
+                    <div class="browser-button el-dark"></div>
                 </div>
                 <div id="browser-content">
                     <pre class="prettyprint">
-<code class="language-js"><div v-scroll-reveal.reset="{delay:500}">// General
+<code class="language-js"><div v-scroll-reveal.reset="{delay:400}">// General
 [
     {
         "_name": "Leevi Kopakkala",
@@ -16,7 +16,7 @@
     }
 ]
 </div>
-<div v-scroll-reveal.reset="{delay:800}">// Contact information
+<div v-scroll-reveal.reset="{delay:600}">// Contact information
 function contact(){
     let github = <a rel="noopener" target="_blank" href="https://github.com/LeeviKopakkala">"https://github.com/LeeviKopakkala"</a>; 
     let linkedin = <a rel="noopener" target="_blank" href="https://linkedin.com/in/leevi-kopakkala">"https://linkedin.com/in/leevi-kopakkala"</a>; // Psst, you can click these links
@@ -87,6 +87,10 @@ export default {
 
 .el-dark {
     background-color: $secondary !important;
+}
+
+.el-red {
+    background-color: $pink !important;
 }
 
 .prettyprint {

@@ -3,23 +3,20 @@
     <div class="container-fluid">
       <Welcome v-scroll-reveal></Welcome>
     </div>
+    <div class="container-fluid container-phone">
+      <div class="row row-center">
+        <div v-scroll-reveal.reset="{delay:500}" class="col-md-6">
+          
+        </div> 
+        <div class="col-md-6">
+          <LaunchSVG class="launch-svg"></LaunchSVG>
+        </div>        
+      </div>          
+    </div>
     <div class="container">
       <div class="row row-center" v-scroll-reveal.reset>    
           <Browser></Browser>    
       </div>
-    </div>
-    <div class="container-fluid container-phone">
-      <div class="row row-center">
-        <div v-scroll-reveal.reset="{delay:500}" class="col-md-4">
-          <PhoneSVG class="phone-svg"></PhoneSVG>
-        </div> 
-        <div v-scroll-reveal.reset="{delay:800}" class="col-md-4">
-          <PhoneSVG class="phone-svg"></PhoneSVG>
-        </div> 
-        <div v-scroll-reveal.reset="{delay:1100}" class="col-md-4">
-          <PhoneSVG class="phone-svg"></PhoneSVG>
-        </div>       
-      </div>          
     </div>
   </div>
 </template>
@@ -28,6 +25,7 @@
 import Browser from '../components/Browser.vue'
 import Welcome from '../components/Welcome.vue'
 import PhoneSVG from '../assets/phone.svg'
+import LaunchSVG from '../assets/launch.svg'
 import Topics from '../components/Topics.vue'
 
 export default {
@@ -39,7 +37,8 @@ export default {
     Browser,
     Welcome,
     PhoneSVG,
-    Topics
+    Topics,
+    LaunchSVG
   }
 }
 </script>
@@ -93,11 +92,24 @@ export default {
 }
 
 
+.launch-svg {
+  position:relative;
+  height:70vh;
+  z-index:-1;
+  width:40vw;
+  animation: blinker 5s linear infinite;
+}
 
 
 @keyframes zoomin {
   from {width:80%;}
   to {width:90%;}
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0.7;
+  }
 }
 
 </style>
