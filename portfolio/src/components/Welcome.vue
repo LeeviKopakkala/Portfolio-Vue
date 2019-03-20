@@ -13,7 +13,9 @@
           </div>             
       </div>
       <div class="row">
-          <p id="coordinates">62.2426° N, 25.7473° E</p>
+          <div class="col-lg-6">
+            <p id="coordinates">62.2426° N, 25.7473° E</p>
+          </div>   
       </div>
   </div>
 </template>
@@ -23,6 +25,7 @@ import Browser from '../components/Browser.vue'
 import WelcomeSVG from '../assets/welcome.svg'
 import SocialIcon from '../components/SocialIcon.vue'
 
+
 export default {
   name: 'Welcome',
   props: {
@@ -31,7 +34,8 @@ export default {
   components: {
     Browser,
     WelcomeSVG,
-    SocialIcon
+    SocialIcon,
+    
   }
 }
 </script>

@@ -7,19 +7,20 @@
                 </div>
                 <div id="browser-content">
                     <pre class="prettyprint">
-<code class="language-js">// General
+<code class="language-js"><div v-scroll-reveal.reset="{delay:500}">// General
 [
     {
         "_name": "Leevi Kopakkala",
-        "title": "Software Developer" // Passionate learner, designer and dreamer.
+        "title": "Software Developer", // Passionate learner, designer and dreamer.
+        "birthday": "03.10.1997"
     }
 ]
-
-// Contact information
+</div>
+<div v-scroll-reveal.reset="{delay:800}">// Contact information
 function contact(){
     let github = <a rel="noopener" target="_blank" href="https://github.com/LeeviKopakkala">"https://github.com/LeeviKopakkala"</a>; 
     let linkedin = <a rel="noopener" target="_blank" href="https://linkedin.com/in/leevi-kopakkala">"https://linkedin.com/in/leevi-kopakkala"</a>; // Psst, you can click these links
-}
+}</div>
 </code>
                     </pre>
                 </div>
