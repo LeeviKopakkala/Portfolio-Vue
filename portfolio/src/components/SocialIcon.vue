@@ -18,7 +18,6 @@ export default {
   .social-icon {
       color:white;
       font-size:2em;
-      margin-top:5%;
       -webkit-transition: opacity 0.5s ease-in-out;
     -moz-transition: opacity 0.5s ease-in-out;
     -ms-transition: opacity 0.5s ease-in-out;

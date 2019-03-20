@@ -10,8 +10,10 @@
           <div v-scroll-reveal.reset="{ delay: 500 }" class="col-sm-4 auto-center">
               <WelcomeSVG id="welcome-svg"></WelcomeSVG>
               <!--<div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="leevi-kopakkala"><a class="LI-simple-link" href='https://fi.linkedin.com/in/leevi-kopakkala?trk=profile-badge'>Leevi Kopakkala</a></div>-->
-          </div>
-              
+          </div>             
+      </div>
+      <div class="row">
+          <p id="coordinates">62.2426° N, 25.7473° E</p>
       </div>
   </div>
 </template>
@@ -61,6 +63,8 @@ export default {
 @media only screen and (max-width: 600px) {
   #header-welcome {
       font-size:4em;
+      margin-top: 15%;
+      margin-bottom: 15%;
   }
 }
 
@@ -70,6 +74,9 @@ export default {
 
 #header-small {
     color: $pink;
+    background: -webkit-linear-gradient(0deg, $pink, rgb(0, 81, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-weight: bold;
     font-size: 1.2em;
 }
@@ -101,6 +108,11 @@ export default {
 
 .color-pink {
     color: $pink;
+}
+
+#coordinates {
+    margin-left: 10px;
+    color: rgb(204, 204, 204);
 }
 
 @media only screen and (max-width: 600px) {
