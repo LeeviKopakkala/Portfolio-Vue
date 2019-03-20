@@ -17,6 +17,11 @@
             <p id="coordinates">62.2426° N, 25.7473° E</p>
           </div>   
       </div>
+      <div class="row">
+          <div class="col-lg-12">
+            <p  v-scroll-reveal.reset="{ delay: 2500 }" class="scroll-down">Scroll down</p>
+          </div>   
+      </div>
   </div>
 </template>
 
@@ -55,6 +60,10 @@ export default {
 .row-welcome {
     width:90vw !important;  
     z-index:1; 
+}
+
+.scroll-down {
+    text-align:center;
 }
 
 #header-welcome {
