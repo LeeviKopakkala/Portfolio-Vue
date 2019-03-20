@@ -5,10 +5,12 @@
     </div>
     <div class="container-fluid container-phone">
       <div class="row row-center">
-        <div v-scroll-reveal.reset="{delay:500}" class="col-md-6">
-          
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-4">
+          <p class="contact-me"><span class="color-pink">" </span>There lies a possibility in every contact.<span class="color-pink"> "</span></p>
         </div> 
-        <div class="col-md-6">
+        <div class="col-md-4">
           <LaunchSVG class="launch-svg"></LaunchSVG>
         </div>        
       </div>          
@@ -100,6 +102,23 @@ export default {
   animation: blinker 5s linear infinite;
 }
 
+.contact-me {
+  text-align:center;
+  font-family: $primary-font;
+  color: $primary-dark;
+  font-size:3em;
+  margin-top:30%;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-me {
+    font-size:2em;
+  }
+}
+
+.color-pink {
+  color: $pink;
+}
 
 @keyframes zoomin {
   from {width:80%;}
