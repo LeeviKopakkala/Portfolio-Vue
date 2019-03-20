@@ -20,6 +20,14 @@
           <Browser></Browser>    
       </div>
     </div>
+    <div class="container">
+      <div class="row row-center">
+        <div class="col-md-12">
+          <p class="copyright"><i><span class="color-pink">" </span>There lies a possibility in every contact.<span class="color-pink"> "</span> </i> </p>
+          <p class="copyright"> © <span class="color-pink">2019</span> Leevi Kopakkala </p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -108,6 +116,11 @@ export default {
   color: $primary-dark;
   font-size:3em;
   margin-top:30%;
+}
+
+.copyright {
+  font-family: $primary-font;
+  color: $primary-dark;
 }
 
 @media only screen and (max-width: 600px) {
