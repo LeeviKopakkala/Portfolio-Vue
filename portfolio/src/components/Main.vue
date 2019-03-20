@@ -47,6 +47,9 @@
           <TechPill color="red" technology="HTML"></TechPill>
           <TechPill color="pink" technology="SASS"></TechPill>
         </div>
+        <div class="col-lg-12 tech-col">
+          <h3>Always ready to learn new tools</h3>
+        </div>
       </div>
     </div>
     <div class="container">
@@ -131,6 +134,7 @@ export default {
   height:50vh;
   left:0;
   margin-top:-2%;
+  opacity:0.5;
 }
 
 .container-fluid {
