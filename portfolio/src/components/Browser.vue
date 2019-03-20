@@ -39,17 +39,19 @@ export default {
 
 #browser-device {
     background: $primary;
-    border-radius: 2px;
+    border-radius: 10px;
     display: inline-block;
     height: auto;
     position: relative;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.288), 0 1px 2px rgba(0, 0, 0, 0.308);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     width:90%;
     margin: 0 auto;
     margin-top: -5%;
     margin-bottom: 5%;
     #browser-nav {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
         top:0;
         width:100%;
         padding-left:2%;
