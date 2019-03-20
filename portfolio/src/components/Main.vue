@@ -7,8 +7,15 @@
       <div class="row row-center">
         <div class="col-md-3">
         </div>
-        <div class="col-md-4">
-          <p class="contact-me"><span class="color-pink">" </span>There lies a possibility in every contact.<span class="color-pink"> "</span></p>
+        <div class="col-md-4 col-article">
+          <h2 class="small-header">Commitment to every project</h2>
+          <h1 class="large-header">From coffee table to launch</h1>
+          <p class="paragraph-text">Every project is an opportunity to learn - And every project is a dream to be fulfilled.<br>
+          </p>
+          <p class="paragraph-text">In the rapidly evolving world, even the tiniest innovation can spring a revolutionary product. 
+          But this requires commitment from each team member who's involved with it.<br>
+          </p>
+          <p class="paragraph-text">I'm up for the challenge.</p>
         </div> 
         <div class="col-md-4">
           <LaunchSVG class="launch-svg"></LaunchSVG>
@@ -116,6 +123,26 @@ export default {
   color: $primary-dark;
   font-size:3em;
   margin-top:30%;
+}
+
+.col-article {
+  margin-top: 0%;
+  text-align:left;
+}
+
+.large-header {
+  color: $primary-dark;
+}
+
+.small-header {
+  color: $pink;
+}
+
+.paragraph-text {
+  color: $primary-dark;
+  font-family: $primary-font;
+  font-size: 1.1em;
+  margin-top:5%;
 }
 
 .copyright {
