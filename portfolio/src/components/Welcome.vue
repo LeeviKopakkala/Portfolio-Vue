@@ -42,7 +42,7 @@ export default {
 .welcome-container {
     text-align:left;
     font-family: $primary-font;
-    background-color: $primary-dark;
+    background-color: white;
     height:100vh;
     padding:10%;
     overflow: hidden;
@@ -54,7 +54,7 @@ export default {
 }
 
 #header-welcome {
-    color: white;
+    color: $primary-dark;
     font-weight: bold;
     font-size: 8em;
     white-space: nowrap;
@@ -82,7 +82,7 @@ export default {
 }
 
 #header-paragraph {
-    color: rgb(223, 223, 223);  
+    color: rgb(151, 151, 151);  
     font-size:1.3em;
 }
 
@@ -112,7 +112,7 @@ export default {
 
 #coordinates {
     margin-left: 10px;
-    color: rgb(204, 204, 204);
+    color: rgb(161, 161, 161);
 }
 
 @media only screen and (max-width: 600px) {

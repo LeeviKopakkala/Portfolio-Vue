@@ -17,8 +17,8 @@
 
 // Contact information
 function contact(){
-    let github = <a rel="noopener" target="_blank" href="https://github.com/LeeviKopakkala">https://github.com/LeeviKopakkala</a>; 
-    let linkedin = <a rel="noopener" target="_blank" href="https:/linkedin.com/in/leevi-kopakkala">https:/linkedin.com/in/leevi-kopakkala</a>; // Psst, you can click these links
+    let github = <a rel="noopener" target="_blank" href="https://github.com/LeeviKopakkala">"https://github.com/LeeviKopakkala"</a>; 
+    let linkedin = <a rel="noopener" target="_blank" href="https://linkedin.com/in/leevi-kopakkala">"https://linkedin.com/in/leevi-kopakkala"</a>; // Psst, you can click these links
 }
 </code>
                     </pre>
@@ -43,7 +43,7 @@ export default {
     display: inline-block;
     height: auto;
     position: relative;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.288), 0 1px 2px rgba(0, 0, 0, 0.308);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.288), 0 2px 4px rgba(0, 0, 0, 0.308);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     width:90%;
     margin: 0 auto;
