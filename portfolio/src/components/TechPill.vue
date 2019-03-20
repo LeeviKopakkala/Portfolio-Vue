@@ -33,12 +33,12 @@ export default {
     -ms-transition: opacity 0.5s ease-in-out;
     -o-transition: opacity 0.5s ease-in-out;
     transition: opacity 0.5s ease-in-out;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.288), 0 2px 4px rgba(0, 0, 0, 0.308);
-    opacity: 1;
+
+    opacity: 0.7;
     margin: 10px;
   }  
   .tech-pill:hover {
-      opacity: 0.5;
+      opacity: 1;
   }
   .green {
       background-color: rgb(74, 216, 121);

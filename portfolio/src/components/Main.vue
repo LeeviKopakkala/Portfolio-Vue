@@ -28,27 +28,24 @@
           <Browser></Browser>    
       </div>
     </div>
-    <div class="container tech-container">
+    <div class="container">
       <div class="row row-center">
         <BlueprintSVG class="blueprint-svg"></BlueprintSVG>
         <div class="col-lg-6 tech-col">
-          <h1>Frameworks</h1>
+          <h1 class="tech-header">Frameworks</h1>
           <TechPill color="green" technology="Vue.JS"></TechPill>
           <TechPill color="red" technology="Angular"></TechPill>
           <TechPill color="blue" technology="Nativescript"></TechPill>
           <TechPill color="blue" technology="Laravel"></TechPill>
         </div>
         <div class="col-lg-6 tech-col">
-          <h1>Languages</h1>
+          <h1 class="tech-header">Languages</h1>
           <TechPill color="blue" technology="Typescript"></TechPill>
           <TechPill color="blue" technology="PHP"></TechPill>
           <TechPill color="yellow" technology="Javascript"></TechPill>
           <TechPill color="yellow" technology="C#"></TechPill>
           <TechPill color="red" technology="HTML"></TechPill>
           <TechPill color="pink" technology="SASS"></TechPill>
-        </div>
-        <div class="col-lg-12 tech-col">
-          <h3>Always ready to learn new tools</h3>
         </div>
       </div>
     </div>
@@ -111,21 +108,32 @@ export default {
   padding-right:0;
   padding-left:0;
   margin-right:auto;
-  margin-left:auto
+  margin-left:auto;
+  margin-top: 10%;
 }
 
 .tech-container {
   margin-top: 1%;
   padding:10px;
-  color:white;
+  color:$primary-dark;
   margin-bottom: 10%; 
-  background: rgb(31, 20, 68);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.288), 0 2px 4px rgba(0, 0, 0, 0.308);
+  font-family: $primary-font !important;
+}
+
+.tech-header {
+  color: rgb(143, 143, 143);
+  font-size:1em;
 }
 
 .tech-col {
-  margin-top:2%;
-  margin-bottom: 2%;
+  opacity:1;
+  margin-bottom: 10%;
+}
+
+@media  only screen and (max-width: 600px) {
+  .tech-col {
+    margin-top: 0%;
+  }
 }
 
 .blueprint-svg {
