@@ -109,6 +109,7 @@ export default {
     position:absolute;
     bottom:-250px;
     overflow: hidden;
+    z-index: -1;
 }
 
 .color-pink {
