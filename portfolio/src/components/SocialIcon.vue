@@ -1,8 +1,8 @@
 
 <template>
 <div>
-    <a class="social-icon" href="https://linkedin.com/in/leevi-kopakkala" target="_blank"> <font-awesome-icon :icon="['fab', 'linkedin-in']" /></a>
-    <a class="social-icon" href="https://github.com/LeeviKopakkala" target="_blank"> <font-awesome-icon :icon="['fab', 'github']" /></a>
+    <a class="social-icon" rel="noopener" href="https://linkedin.com/in/leevi-kopakkala" target="_blank"> <font-awesome-icon :icon="['fab', 'linkedin-in']" /></a>
+    <a class="social-icon" rel="noopener" href="https://github.com/LeeviKopakkala" target="_blank"> <font-awesome-icon :icon="['fab', 'github']" /></a>
 </div>
     
 </template>

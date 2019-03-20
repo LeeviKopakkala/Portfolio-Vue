@@ -1,9 +1,9 @@
 <template>
             <div id="browser-device">
                 <div id="browser-nav">
-                    <div id="browser-button" class="el-dark" ></div>
-                    <div id="browser-button"></div>
-                    <div id="browser-button"></div>
+                    <div class="browser-button el-dark" ></div>
+                    <div class="browser-button"></div>
+                    <div class="browser-button"></div>
                 </div>
                 <div id="browser-content">
                     <pre class="prettyprint">
@@ -50,7 +50,7 @@ export default {
         position:relative;
         background:#fff;
         height:10%;
-        #browser-button {
+        .browser-button {
             display:inline-block;
             left:0;
             height:10px;
