@@ -23,7 +23,12 @@
         </div>        
       </div>          
     </div>
-     <div class="container tech-container">
+    <div class="container">
+      <div class="row row-center" v-scroll-reveal.reset>    
+          <Browser></Browser>    
+      </div>
+    </div>
+    <div class="container tech-container">
       <div class="row row-center">
         <BlueprintSVG class="blueprint-svg"></BlueprintSVG>
         <div class="col-lg-6 tech-col">
@@ -42,11 +47,6 @@
           <TechPill color="red" technology="HTML"></TechPill>
           <TechPill color="pink" technology="SASS"></TechPill>
         </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row row-center" v-scroll-reveal.reset>    
-          <Browser></Browser>    
       </div>
     </div>
     <div class="container">
@@ -113,9 +113,10 @@ export default {
 
 .tech-container {
   margin-top: 1%;
+  padding:10px;
   color:white;
   margin-bottom: 10%; 
-  background: rgb(73, 70, 255);
+  background: rgb(31, 20, 68);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.288), 0 2px 4px rgba(0, 0, 0, 0.308);
 }
 
@@ -127,8 +128,9 @@ export default {
 .blueprint-svg {
   position:absolute;
   width: 100%;
+  height:50vh;
   left:0;
-  margin-top:-5%;
+  margin-top:-2%;
 }
 
 .container-fluid {
