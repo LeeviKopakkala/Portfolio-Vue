@@ -13,7 +13,14 @@
         "_name": "Leevi Kopakkala",
         "title": "Software Developer" // Passionate learner, designer and dreamer.
     }
-]</code>
+]
+
+// Contact information
+function contact(){
+    let github = <a rel="noopener" target="_blank" href="https://github.com/LeeviKopakkala">https://github.com/LeeviKopakkala</a>; 
+    let linkedin = <a rel="noopener" target="_blank" href="https:/linkedin.com/in/leevi-kopakkala">https:/linkedin.com/in/leevi-kopakkala</a>; // Psst, you can click these links
+}
+</code>
                     </pre>
                 </div>
             </div>
