@@ -52,4 +52,7 @@ export default {
   .yellow {
       background-color: rgb(230, 233, 58);
   }
+  .pink {
+      background-color: $pink;
+  }
 </style>

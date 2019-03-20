@@ -3,25 +3,6 @@
     <div class="container-fluid">
       <Welcome v-scroll-reveal></Welcome>
     </div>
-    <div class="container tech-container">
-      <div class="row row-center">
-        <BlueprintSVG class="blueprint-svg"></BlueprintSVG>
-        <div class="col-lg-6 tech-col">
-          <h1>Frameworks</h1>
-          <TechPill color="green" technology="Vue.JS"></TechPill>
-          <TechPill color="red" technology="Angular"></TechPill>
-          <TechPill color="blue" technology="Nativescript"></TechPill>
-          <TechPill color="blue" technology="Laravel"></TechPill>
-        </div>
-        <div class="col-lg-6 tech-col">
-          <h1>Languages</h1>
-          <TechPill color="blue" technology="Typescript"></TechPill>
-          <TechPill color="blue" technology="PHP"></TechPill>
-          <TechPill color="yellow" technology="Javascript"></TechPill>
-          <TechPill color="yellow" technology="C#"></TechPill>
-        </div>
-      </div>
-    </div>
     <div class="container-fluid container-phone">
       <div class="row row-center">
         <div class="col-md-3">
@@ -41,6 +22,27 @@
           <LaunchSVG class="launch-svg"></LaunchSVG>
         </div>        
       </div>          
+    </div>
+     <div class="container tech-container">
+      <div class="row row-center">
+        <BlueprintSVG class="blueprint-svg"></BlueprintSVG>
+        <div class="col-lg-6 tech-col">
+          <h1>Frameworks</h1>
+          <TechPill color="green" technology="Vue.JS"></TechPill>
+          <TechPill color="red" technology="Angular"></TechPill>
+          <TechPill color="blue" technology="Nativescript"></TechPill>
+          <TechPill color="blue" technology="Laravel"></TechPill>
+        </div>
+        <div class="col-lg-6 tech-col">
+          <h1>Languages</h1>
+          <TechPill color="blue" technology="Typescript"></TechPill>
+          <TechPill color="blue" technology="PHP"></TechPill>
+          <TechPill color="yellow" technology="Javascript"></TechPill>
+          <TechPill color="yellow" technology="C#"></TechPill>
+          <TechPill color="red" technology="HTML"></TechPill>
+          <TechPill color="pink" technology="SASS"></TechPill>
+        </div>
+      </div>
     </div>
     <div class="container">
       <div class="row row-center" v-scroll-reveal.reset>    
@@ -113,7 +115,7 @@ export default {
   margin-top: 1%;
   color:white;
   margin-bottom: 10%; 
-  background: rgb(96, 41, 247);
+  background: rgb(73, 70, 255);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.288), 0 2px 4px rgba(0, 0, 0, 0.308);
 }
 
@@ -126,6 +128,7 @@ export default {
   position:absolute;
   width: 100%;
   left:0;
+  margin-top:-5%;
 }
 
 .container-fluid {
