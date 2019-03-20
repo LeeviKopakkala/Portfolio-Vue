@@ -8,7 +8,7 @@
           </div>  
           <div class="col-sm-4 auto-center">
               <WelcomeSVG id="welcome-svg"></WelcomeSVG>
-              <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="leevi-kopakkala"><a class="LI-simple-link" href='https://fi.linkedin.com/in/leevi-kopakkala?trk=profile-badge'>Leevi Kopakkala</a></div>
+              <!--<div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="leevi-kopakkala"><a class="LI-simple-link" href='https://fi.linkedin.com/in/leevi-kopakkala?trk=profile-badge'>Leevi Kopakkala</a></div>-->
           </div>
               
       </div>

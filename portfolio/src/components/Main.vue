@@ -4,7 +4,7 @@
       <Welcome></Welcome>
     </div>
     <div class="container">
-      <div class="row row-center">      
+      <div class="row row-center" v-scroll-reveal.reset>      
           <Browser></Browser>
       </div>
     </div>
