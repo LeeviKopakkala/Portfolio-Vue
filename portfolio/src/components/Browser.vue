@@ -7,7 +7,9 @@
                 </div>
                 <div id="browser-content">
                     <pre class="prettyprint">
-<code class="language-js"><div v-scroll-reveal.reset="{delay:400}">// General
+<code class="language-js"><div v-scroll-reveal.reset="{delay:400}">/* Caught your attention? Feel free to contact */
+    
+// General
 [
     {
         "_name": "Leevi Kopakkala",
@@ -21,8 +23,7 @@ function contact(){
     let github = <a rel="noopener" target="_blank" href="https://github.com/LeeviKopakkala">"https://github.com/LeeviKopakkala"</a>; 
     let linkedin = <a rel="noopener" target="_blank" href="https://linkedin.com/in/leevi-kopakkala">"https://linkedin.com/in/leevi-kopakkala"</a>; // Psst, you can click these links
 }</div>
-</code>
-                    </pre>
+</code></pre>
                 </div>
             </div>
 </template>

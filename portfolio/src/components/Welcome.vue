@@ -22,7 +22,7 @@
 
 <script>
 import Browser from '../components/Browser.vue'
-import WelcomeSVG from '../assets/welcome.svg'
+import WelcomeSVG from '../assets/space.svg'
 
 import SocialIcon from '../components/SocialIcon.vue'
 
@@ -104,9 +104,10 @@ export default {
 }
 
 #welcome-svg {
-    height:80vh;
+    height:120vh;
+    left:-200px;
     position:absolute;
-    bottom:0;
+    bottom:-250px;
     overflow: hidden;
 }
 

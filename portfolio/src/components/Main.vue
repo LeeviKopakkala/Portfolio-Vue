@@ -16,6 +16,7 @@
           But this requires commitment from each team member who's involved with it.<br>
           </p>
           <p class="paragraph-text">I'm up for the challenge.</p>
+          <div class="contact-button" v-on:click="scrollTo"><p class="button-text">Contact</p></div>
         </div> 
         <div class="col-md-4">
           <LaunchSVG class="launch-svg"></LaunchSVG>
@@ -56,6 +57,12 @@ export default {
     PhoneSVG,
     Topics,
     LaunchSVG
+  },
+  // define methods under the `methods` object
+  methods: {
+    scrollTo: function (event) {
+      location.href = "#browser-device";
+    }
   }
 }
 </script>
@@ -136,6 +143,7 @@ export default {
 
 .small-header {
   color: $pink;
+  font-size:1.5em;
 }
 
 .paragraph-text {
@@ -148,6 +156,32 @@ export default {
 .copyright {
   font-family: $primary-font;
   color: $primary-dark;
+}
+
+.contact-button {
+  -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+  margin-top: 5%;
+  cursor: pointer;
+  background: rgb(0, 164, 214);
+  border-radius: 25px;
+  width: 100px;
+  color: white;
+  font-family: $primary-font;
+  text-align:center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.288), 0 2px 4px rgba(0, 0, 0, 0.308);
+  .button-text{
+    top:50%;
+    padding: 10px;
+  }
+}
+
+.contact-button:hover {
+  opacity: 0.8;
 }
 
 @media only screen and (max-width: 600px) {
