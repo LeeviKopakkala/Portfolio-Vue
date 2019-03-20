@@ -4,9 +4,10 @@
           <div class="col-sm-5 auto-center">
               <h3 id="header-small">Redefining the software industry</h3>
               <h1 id="header-welcome">{ Welcome }</h1>
-              <p id="header-paragraph">Development through creativity</p>
+              <p id="header-paragraph">Hi, I'm Leevi Kopakkala. Software Developer from <span class="color-pink">Jyväskylä</span>, Finland...</p>
+              <SocialIcon></SocialIcon>
           </div>  
-          <div class="col-sm-4 auto-center">
+          <div v-scroll-reveal.reset="{ delay: 500 }" class="col-sm-4 auto-center">
               <WelcomeSVG id="welcome-svg"></WelcomeSVG>
               <!--<div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="leevi-kopakkala"><a class="LI-simple-link" href='https://fi.linkedin.com/in/leevi-kopakkala?trk=profile-badge'>Leevi Kopakkala</a></div>-->
           </div>
@@ -18,6 +19,8 @@
 <script>
 import Browser from '../components/Browser.vue'
 import WelcomeSVG from '../assets/welcome.svg'
+import SocialIcon from '../components/SocialIcon.vue'
+
 export default {
   name: 'Welcome',
   props: {
@@ -25,7 +28,8 @@ export default {
   },
   components: {
     Browser,
-    WelcomeSVG
+    WelcomeSVG,
+    SocialIcon
   }
 }
 </script>
@@ -72,6 +76,7 @@ export default {
 
 #header-paragraph {
     color: rgb(223, 223, 223);  
+    font-size:1.3em;
 }
 
 .auto-center {
@@ -92,6 +97,10 @@ export default {
     position:absolute;
     bottom:0;
     overflow: hidden;
+}
+
+.color-pink {
+    color: $pink;
 }
 
 @media only screen and (max-width: 600px) {

@@ -3,6 +3,11 @@ import App from './App.vue'
 import VueRouter from 'vue-router'
 import VueScrollReveal from 'vue-scroll-reveal';
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
 
 import 'bootstrap'; import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -14,6 +19,10 @@ Vue.use(VueScrollReveal, {
   distance: '10px',
   mobile: false
 });
+
+library.add(faUserSecret, faLinkedinIn, faGithub)
+
+Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.config.productionTip = false
 

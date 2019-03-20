@@ -1,7 +1,7 @@
 <template>
   <div class="view">
     <div class="container-fluid">
-      <Welcome></Welcome>
+      <Welcome v-scroll-reveal></Welcome>
     </div>
     <div class="container">
       <div class="row row-center" v-scroll-reveal.reset>      
