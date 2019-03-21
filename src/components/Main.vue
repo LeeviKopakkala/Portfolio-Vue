@@ -115,7 +115,7 @@ export default {
 }
 
 .tech-container {
-  margin-top: -5%;
+  margin-top: -15vh;
   padding:10px;
   margin-bottom: 10%; 
   font-family: $primary-font !important;
