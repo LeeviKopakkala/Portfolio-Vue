@@ -17,18 +17,18 @@
             <p id="coordinates">62.2426° N, 25.7473° E</p>
           </div>   
       </div>
-      <div class="row">
+      <!--<div class="row">
           <div class="col-lg-12">
             <p  v-scroll-reveal.reset="{ delay: 2500 }" class="scroll-down">Scroll down</p>
           </div>   
-      </div>
+      </div>-->
   </div>
 </template>
 
 <script>
 import Browser from '../components/Browser.vue'
 import WelcomeSVG from '../assets/space.svg'
-
+import TechPill from '../components/TechPill.vue'
 import SocialIcon from '../components/SocialIcon.vue'
 
 
@@ -41,6 +41,7 @@ export default {
     Browser,
     WelcomeSVG,
     SocialIcon,
+    TechPill
   }
 }
 </script>
@@ -135,9 +136,5 @@ export default {
         height:70vh;
     }
 }
-
-
-
-
 
 </style>
