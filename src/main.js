@@ -4,7 +4,7 @@ import VueRouter from 'vue-router'
 import VueScrollReveal from 'vue-scroll-reveal';
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faLinkedinIn, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedinIn, faGithub, faInstagram, faVuejs } from '@fortawesome/free-brands-svg-icons'
 import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
@@ -20,7 +20,7 @@ Vue.use(VueScrollReveal, {
   mobile: false
 });
 
-library.add(faUserSecret, faLinkedinIn, faGithub, faInstagram)
+library.add(faUserSecret, faLinkedinIn, faGithub, faInstagram, faVuejs)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 

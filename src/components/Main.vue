@@ -179,6 +179,7 @@ export default {
   z-index:100;
   width:20vw;
   padding:5%;
+  opacity:1;
 }
 
 
@@ -266,8 +267,17 @@ export default {
 }
 
 @keyframes blinker {
+  0% {
+    opacity: 1.0;
+  }
   50% {
     opacity: 0.7;
+  }
+  75% {
+    opacity: 1.0;
+  }
+  100% {
+    opacity: 1.0;
   }
 }
 
