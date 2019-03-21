@@ -19,7 +19,7 @@
           <div class="contact-button" v-on:click="scrollTo"><p class="button-text">Contact</p></div>
         </div> 
         <div class="col-md-4">
-          <LaunchSVG class="launch-svg"></LaunchSVG>
+          <LaunchSVG v-scroll-reveal.reset="{ delay: 500 }" class="launch-svg"></LaunchSVG>
         </div>         
       </div>            
     </div>
@@ -56,7 +56,7 @@
       <div class="row row-center">
         <div class="col-md-12">
           <p class="copyright"><i><span class="color-pink">" </span>There lies a possibility in every contact.<span class="color-pink"> "</span> </i> </p>
-          <p class="copyright"> © <span class="color-pink">2019</span> Leevi Kopakkala </p>
+          <p class="copyright"> © <span class="color-pink">2019</span> Leevi Kopakkala | Handcrafted with <span class="green">Vue JS</span> </p>
         </div>
       </div>
     </div>
@@ -131,6 +131,10 @@ export default {
 .tech-col {
   opacity:1;
   margin-bottom: 10%;
+}
+
+.green {
+  color: rgb(0, 245, 110);
 }
 
 @media  only screen and (max-width: 600px) {
