@@ -4,9 +4,9 @@
     <a class="social-icon" rel="noopener" href="https://linkedin.com/in/leevi-kopakkala" target="_blank"> <font-awesome-icon :icon="['fab', 'linkedin-in']" /></a>
     <a class="social-icon" rel="noopener" href="https://github.com/LeeviKopakkala" target="_blank"> <font-awesome-icon :icon="['fab', 'github']" /></a>
     <a class="social-icon" rel="noopener" href="https://instagram.com/leevikopakkala" target="_blank"> <font-awesome-icon :icon="['fab', 'instagram']" /></a>
-    <hr>
+    <br>
     <div class="button-group">   
-      <div class="contact-button" v-on:click="scrollTo"><span class="button-text">Contact</span></div>
+      <div class="contact-button" v-on:click="scrollTo"><span class="button-text">Contact</span></div>with my experience
     </div>  
 </div>
     

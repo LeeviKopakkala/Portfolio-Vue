@@ -2,26 +2,6 @@
   <div class="view">
     <div class="container-fluid">
       <Welcome v-scroll-reveal></Welcome>
-      <div class="container tech-container">
-        <div class="row row-center">
-          <div class="col-lg-6 tech-col">
-            <h1 class="tech-header">Frameworks</h1>
-            <TechPill color="green" technology="Vue.JS"></TechPill>
-            <TechPill color="red" technology="Angular"></TechPill>
-            <TechPill color="blue" technology="Nativescript"></TechPill>
-            <TechPill color="blue" technology="Laravel"></TechPill>
-          </div>
-          <div class="col-lg-6 tech-col">
-            <h1 class="tech-header">Languages</h1>
-            <TechPill color="blue" technology="Typescript"></TechPill>
-            <TechPill color="blue" technology="PHP"></TechPill>
-            <TechPill color="yellow" technology="Javascript"></TechPill>
-            <TechPill color="yellow" technology="C#"></TechPill>
-            <TechPill color="red" technology="HTML"></TechPill>
-            <TechPill color="pink" technology="SASS"></TechPill>
-          </div>
-        </div>
-      </div>
     </div>
     <div class="container-fluid container-phone">
       <div class="row row-center">
@@ -51,6 +31,27 @@
           <Browser></Browser>    
       </div>
     </div>
+    <div class="container tech-container">
+        <div class="row row-center">
+          <div class="col-lg-6 tech-col">
+            <h1 class="tech-header">- Frameworks -</h1>
+            <TechPill color="green" technology="Vue.JS"></TechPill>
+            <TechPill color="red" technology="Angular"></TechPill>
+            <TechPill color="blue" technology="React"></TechPill>
+            <TechPill color="blue" technology="Nativescript"></TechPill>
+            <TechPill color="blue" technology="Laravel"></TechPill>
+          </div>
+          <div class="col-lg-6 tech-col">
+            <h1 class="tech-header">- Languages -</h1>
+            <TechPill color="blue" technology="Typescript"></TechPill>
+            <TechPill color="blue" technology="PHP"></TechPill>
+            <TechPill color="yellow" technology="Javascript"></TechPill>
+            <TechPill color="yellow" technology="C#"></TechPill>
+            <TechPill color="red" technology="HTML"></TechPill>
+            <TechPill color="pink" technology="SASS"></TechPill>
+          </div>
+        </div>
+      </div>
     <div class="container">
       <div class="row row-center">
         <div class="col-md-12">
@@ -115,12 +116,10 @@ export default {
 }
 
 .tech-container {
-  margin-top: -15vh;
+  margin-top: 0;
   padding:10px;
-  margin-bottom: 10%; 
+  padding-bottom: 0;
   font-family: $primary-font !important;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
   top: 0;
 }
 

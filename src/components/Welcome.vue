@@ -52,7 +52,7 @@ export default {
 .welcome-container {
     text-align:left;
     font-family: $primary-font;
-    background-color: white;
+    background: none;
     height:100vh;
     padding:10%;
     overflow: hidden;

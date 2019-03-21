@@ -39,6 +39,7 @@ export default {
   }  
   .tech-pill:hover {
       opacity: 1;
+      cursor: default;
   }
   .green {
       background-color: rgb(74, 216, 121);
