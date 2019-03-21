@@ -39,4 +39,5 @@ export default {
   .row-center {
      margin: 0 auto;
     }
+    
 </style>
