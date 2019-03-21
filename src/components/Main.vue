@@ -234,8 +234,8 @@ export default {
     opacity: 1;
   margin-top: 5%;
   cursor: pointer;
-  background: rgb(0, 164, 214);
-  border-radius: 25px;
+  background: $pink;
+  border-radius: 1px 25px 25px 25px;
   width: 100px;
   color: white;
   font-family: $primary-font;
