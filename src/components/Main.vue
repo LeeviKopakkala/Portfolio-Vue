@@ -119,6 +119,9 @@ export default {
   padding:10px;
   margin-bottom: 10%; 
   font-family: $primary-font !important;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
 }
 
 
