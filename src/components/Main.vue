@@ -306,7 +306,7 @@ export default {
     opacity: 1.0;
   }
   50% {
-    opacity: 0.7;
+    opacity: 0.96;
   }
   75% {
     opacity: 1.0;
