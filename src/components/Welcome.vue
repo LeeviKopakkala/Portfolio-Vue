@@ -95,12 +95,6 @@ export default {
       margin-top: 15%;
       margin-bottom: 15%;
   }
-  .scroll-down {
-      margin-top: -20vh;
-  }
-  .scroll-text {
-    margin-top: -14vh;
-}
 }
 
 .svg-welcome {
