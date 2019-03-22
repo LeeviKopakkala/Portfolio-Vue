@@ -87,6 +87,7 @@ export default {
     font-weight: bold;
     font-size: 8em;
     white-space: nowrap;
+    z-index: 10;
 }
 
 @media only screen and (max-width: 600px) {
@@ -130,11 +131,11 @@ export default {
 
 #welcome-svg {
     height:120vh;
-    left:-200px;
+    left:150px;
     position:absolute;
     bottom:-250px;
     overflow: hidden;
-    z-index: -1;
+    width:60vw;
 }
 
 .color-pink {
