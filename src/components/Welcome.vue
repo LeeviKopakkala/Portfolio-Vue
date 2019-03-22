@@ -17,11 +17,14 @@
             <p id="coordinates">62.2426° N, 25.7473° E</p>
           </div>   
       </div>
-      <!--<div class="row">
+      <div class="row">
+          <div class="col-sm-12">
+              <p v-scroll-reveal.reset="{ delay: 1000 }" class="scroll-down scroll-work" ><font-awesome-icon :icon="['fas', 'fingerprint']"/></p>
+            </div>
           <div class="col-lg-12">
-            <p  v-scroll-reveal.reset="{ delay: 2500 }" class="scroll-down">Scroll down</p>
+           <p  v-scroll-reveal.reset="{ delay: 2500 }" class="scroll-down">  Scroll down to see my work </p>
           </div>   
-      </div>-->
+      </div>
   </div>
 </template>
 
@@ -65,6 +68,15 @@ export default {
 
 .scroll-down {
     text-align:center;
+    font-family: $primary-font;
+    opacity:0.5;
+    color: $pink;
+}
+
+.scroll-work {
+    color: #242424;
+    font-size: 2em;
+    opacity:0.4;
 }
 
 #header-welcome {

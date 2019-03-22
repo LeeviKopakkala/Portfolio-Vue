@@ -207,6 +207,7 @@ export default {
 .col-article {
   margin-top: 0%;
   text-align:left;
+  font-family: $primary-font;
 }
 
 .large-header {
