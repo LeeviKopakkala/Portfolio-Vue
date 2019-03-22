@@ -24,7 +24,7 @@
           <p class="paragraph-text">I'm up for the challenge.</p>
           <div class="contact-button" v-on:click="scrollTo"><p class="button-text">Hire me</p></div>
         </div> 
-        <div v-scroll-reveal.reset="{ delay: 100, distance: '200px', }" class="col-md-4">
+        <div v-scroll-reveal="{ delay: 100, distance: '200px', }" class="col-md-4">
           <LaunchSVG class="launch-svg"></LaunchSVG>
         </div>   
 
