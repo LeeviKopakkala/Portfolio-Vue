@@ -24,8 +24,8 @@
           <p class="paragraph-text">I'm up for the challenge.</p>
           <div class="contact-button" v-on:click="scrollTo"><p class="button-text">Hire me</p></div>
         </div> 
-        <div class="col-md-4">
-          <LaunchSVG v-scroll-reveal.reset="{ delay: 500 }" class="launch-svg"></LaunchSVG>
+        <div v-scroll-reveal.reset="{ delay: 100, distance: '200px', }" class="col-md-4">
+          <LaunchSVG class="launch-svg"></LaunchSVG>
         </div>   
 
       </div>            
@@ -306,7 +306,7 @@ export default {
     opacity: 1.0;
   }
   50% {
-    opacity: 0.96;
+    opacity: 0.99;
   }
   75% {
     opacity: 1.0;
