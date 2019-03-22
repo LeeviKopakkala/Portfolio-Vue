@@ -104,7 +104,7 @@ export default {
 .container {
     font-family: $primary-font;
     z-index:100;
-    background:#fff;
+    background:none;
 }
 
 .container-phone {
@@ -113,6 +113,7 @@ export default {
   margin-right:auto;
   margin-left:auto;
   margin-top: 10%;
+  background: none;
 }
 
 .tech-container {

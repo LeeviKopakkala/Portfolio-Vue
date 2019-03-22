@@ -21,8 +21,8 @@
           <div class="col-sm-12">
               <p v-scroll-reveal.reset="{ delay: 1000 }" class="scroll-down scroll-work" ><font-awesome-icon :icon="['fas', 'fingerprint']"/></p>
             </div>
-          <div class="col-lg-12">
-           <p  v-scroll-reveal.reset="{ delay: 2500 }" class="scroll-down">  Scroll down to see my work </p>
+          <div class="col-sm-12">
+           <p  v-scroll-reveal.reset="{ delay: 2500 }" class="scroll-down scroll-text">  Scroll down to see my work </p>
           </div>   
       </div>
   </div>
@@ -71,6 +71,7 @@ export default {
     font-family: $primary-font;
     opacity:0.5;
     color: $pink;
+    z-index:1002;
 }
 
 .scroll-work {
@@ -78,6 +79,8 @@ export default {
     font-size: 2em;
     opacity:0.4;
 }
+
+
 
 #header-welcome {
     color: $primary-dark;
@@ -92,6 +95,12 @@ export default {
       margin-top: 15%;
       margin-bottom: 15%;
   }
+  .scroll-down {
+      margin-top: -20vh;
+  }
+  .scroll-text {
+    margin-top: -14vh;
+}
 }
 
 .svg-welcome {
