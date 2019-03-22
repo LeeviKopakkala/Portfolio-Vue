@@ -3,9 +3,15 @@
     <div class="container-fluid">
       <Welcome v-scroll-reveal></Welcome>
     </div>
+    <div class="container-fluid">
+      <div class="space-container">
+            <SpaceSVG id="space-svg"></SpaceSVG>      
+        </div> 
+    </div>
     <div class="container-fluid container-phone">
       <div class="row row-center">
         <div class="col-md-3">
+          
         </div>
         <div class="col-md-4 col-article">
           <h2 class="small-header">Commitment to every project</h2>
@@ -20,7 +26,8 @@
         </div> 
         <div class="col-md-4">
           <LaunchSVG v-scroll-reveal.reset="{ delay: 500 }" class="launch-svg"></LaunchSVG>
-        </div>         
+        </div>   
+
       </div>            
     </div>
     <div id="contact"> </div>  
@@ -71,6 +78,7 @@ import LaunchSVG from '../assets/launch.svg'
 import BlueprintSVG from '../assets/blueprint.svg'
 import Topics from '../components/Topics.vue'
 import TechPill from '../components/TechPill.vue'
+import SpaceSVG from '../assets/purespace.svg'
 
 export default {
   name: 'Main',
@@ -84,7 +92,8 @@ export default {
     Topics,
     LaunchSVG,
     TechPill,
-    BlueprintSVG
+    BlueprintSVG,
+    SpaceSVG
   },
   // define methods under the `methods` object
   methods: {
@@ -159,6 +168,23 @@ export default {
   margin-top:-2%;
   opacity:0.5;
 }
+.space-container {
+  overflow:hidden;
+}
+#space-svg {
+  height:120vh;
+  right:150px;
+  position:absolute;
+  width:35vw;
+}
+
+@media  only screen and (max-width: 1200px) {
+   #space-svg {
+    display:none;
+  }
+}
+
+
 
 .container-fluid {
   padding-right:0;
