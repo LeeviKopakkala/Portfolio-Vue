@@ -30,7 +30,7 @@
 
 <script>
 import Browser from '../components/Browser.vue'
-import WelcomeSVG from '../assets/spaceblack.svg'
+import WelcomeSVG from '../assets/spacestars.svg'
 import TechPill from '../components/TechPill.vue'
 import SocialIcon from '../components/SocialIcon.vue'
 
