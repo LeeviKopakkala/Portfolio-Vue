@@ -100,7 +100,9 @@ export default {
 
 @import '../../src/assets/css/prettyprint.css';
 
-
+.view {
+  background: none;
+}
 .container {
     font-family: $primary-font;
     z-index:100;
@@ -192,7 +194,7 @@ export default {
 .launch-svg {
   position:relative;
   height:70vh;
-  z-index:-1;
+  z-index:1;
   width:40vw;
   animation: blinker 5s linear infinite;
 }
